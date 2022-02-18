@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos</title>
+</head>
+<body>
+    <h1>
+        Fundamentos Java Script</h1>
+        <script>
+             var hola ="hola mundo";
+             let hello ="Hello world"
+             console.log(hola);
+             console.log(hello);
+             console.log(window);
+             console.log(window.hola);
+             console.log(window.hello)
+
+             // ambito de bloque
+             console.log("**************var****************")
+             var musica = "rock"
+             console.log("variable musica antes del bloque",musica)
+             // esto es un bloque
+             {
+             var musica= "pop"
+             console.log("variable musica dentro del bloque",musica)
+             }
+             console.log("variable musica antes del bloque",musica)
+
+             console.log("**************let****************")
+             let musica2 = "rock"
+             console.log("variable musica antes del bloque",musica2)
+             // esto es un bloque
+            {
+             let musica2= "pop"
+             console.log("variable musica dentro del bloque",musica2)
+            }
+            console.log("variable musica antes del bloque",musica2)
+            
+        </script>
+
+</body>
+</html>

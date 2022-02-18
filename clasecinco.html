@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String</h1>
+</body>
+
+
+<script>
+    //Cadenas de texto (Strings)
+    let nombre = "Juan"
+    let apellido = "gonzalez"
+    let saludo = new String ("Hola mundo")
+    let lorem = "        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum pariatur magnam ad, suscipit debitis architecto quos facere enim inventore minus minima ab mollitia tempora nobis, quaerat, voluptatum libero deleniti molestias? "
+
+    console.log(nombre,apellido,saludo)
+    console.log(
+        nombre.length,
+        apellido.length,
+        saludo.length,        
+        nombre.toUpperCase(),
+        apellido.toLowerCase(),
+        lorem.includes("amet"),
+        lorem,
+        lorem.trim(),
+        lorem.split(" "),
+        lorem.split(",")
+    )
+
+</script>
+</html>
