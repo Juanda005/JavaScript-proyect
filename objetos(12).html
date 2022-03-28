@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos</title>
+</head>
+<body>
+    <h1>objetos</h1>
+
+    <script>
+        const b = {};
+        console.log(b);
+
+        //otra manera pero casi no se usa
+        const c = new Object();
+        console.log(c);
+
+        /* dentro de una objeto a las variables se les van a llamar
+        atributos/propiedades y a las funciones se les llama metodos*/
+
+        const juanda = {
+            nombre: "Juan",
+            apellido: "Gonzalez",
+            edad: 16,
+            pasatiempos: ["estudiar","correr","hacer ejercicio"],
+            soltero: true,
+            contactos:{
+                telefono: "356-51-66",
+                direccion: "carrera sur avenida",
+                gmail: "juandagonzalez@gmail.com",
+                },
+                saludar: function(){
+                    console.log(`hola`);
+                },
+                decirMiNombre: function(){
+                    console.log(`Hola mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad} años y te puedes comunicar conmigo por mi correo gmail ${this.contactos.gmail}`);
+                }
+        }
+        console.log(juanda);
+
+        //otra manera de acceder 
+        console.log(juanda["edad"]);
+
+
+        //como acceder a un elemento de nuestro objeto con el ( . ) (forma mas facil)
+        console.log(juanda.nombre);
+        console.log(juanda.apellido);
+        console.log(juanda.soltero);
+        console.log(juanda.pasatiempos[0]);
+        console.log(juanda.contactos.gmail);
+        juanda.saludar();
+        juanda.decirMiNombre();
+
+        //este metodo me ayuda a alistar los titulos de los valores
+        console.log(Object.keys(juanda));
+
+        //este metodo me ayuda a listar los valores
+        console.log(Object.values(juanda));
+
+        //este metodo me ayuda a saber si una propiedad o valor esta dentro de un objeto 
+        console.log(juanda.hasOwnProperty("edad"));
+        console.log(juanda.hasOwnProperty("estatura"));
+
+
+    </script>
+    
+</body>
+</html>

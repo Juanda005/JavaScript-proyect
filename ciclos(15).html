@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos</title>
+</head>
+<body>
+    <h1>Ciclos</h1>
+    
+    <script>
+        
+        //let contador = 0;
+
+        //con while siempre se van a comprarar antes de ejecutar las lineas que estan dentro del ciclo 
+
+
+         /*while (contador < 10) {
+             console.log("while " + contador);
+             contador++;
+            }
+            */
+
+
+            //mientras que con do while al menos se va a ejecutar una vez todo el codigo y apartir de la segunda en adelante si la condicion se cumple 
+
+            /*do{
+                console.log("do while " + contador);
+                contador++;
+            } while (contador < 10);
+            */
+
+
+            /*sintaxis de for*/
+
+            // for (inicializacion de la variable; condicion;
+            // decremento o incremento) {
+            //     sentencias que ejecuta el for
+            //     sentencias que ejecuta el for
+            //     sentencuas que ejecuta el for
+            // } 
+
+
+            for (let i = 0; i < 10; i++) {
+                console.log("for " +i);;
+            } 
+
+
+            let numeros = [10,20,30,40,50,60,70,80,90] 
+
+            for (let i = 0; i < numeros.length; i++) {
+                console.log(numeros[i]); //imprimiendo la posicion i
+            }
+
+
+            //un for in ayuda a recorrer o iterar las propiedades de un objeto
+
+            //crear una variable que represente la propiedad que queremos imprimir
+            //cuando estemos trabajando con un forin y queremos imprimir el valor de un ibjeto la notacion del punto no nos servira
+
+            const juan = {
+                nombre: "juan",
+                apellido: "gonzalez",
+                edad: 16,
+            }
+            
+            //for in es mas para objetos primitivos
+            //for in es la variante del ciclo for que me va a permitir iterar o recorrercada una de las propiedades de un pbjeto primitivo
+            for (const propiedad in juan) {
+                console.log(`key: ${propiedad} value: ${juan[propiedad]}` );
+            }
+
+
+            //for of es mas para arrays
+            //for of me va servir para poder recorrer cada uno de los elementos de cualquier objeto en javaxript que sea iterable es decir que pueda partirlo en pqueños elementos como los arreglos que cada una de sus posiciones es un elemento o como las cadenas de texto que cada caracter se púede recorrer
+
+            for (const elementos of numeros) {
+                console.log(elementos);
+            }
+
+
+            const string = "hola mundo"
+
+            for (const caracter of string) {
+                console.log(caracter);
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+</head>
+<body>
+    <h1> Template</h1>
+    
+    <script>
+        let nombre = "Juan"
+        let apellido = "Gonzalez"
+
+        //concatenacion
+        let saludo = "Hola mi nombre es " + nombre + " " + apellido + "."
+        console.log(saludo)
+        
+        //interpolacion de variables
+        //template string
+
+        let saludo2 = `hola mi nombre es ${nombre} ${apellido}.`
+        console.log(saludo2)
+
+        let ul = "<ul><li>primavera</li><li>verano</li><li>otoño</li><li>invierno</li></ul>"
+
+    console.log(ul)
+
+    let ul2 = 
+    `<ul>
+    <li>primavera</li>
+    <li>verano</li>
+    <li>otoño</li>
+    <li>invierno</li>
+    </ul>`
+    console.log(ul2)
+
+
+//otra opcion
+    let ul3 =  "<ul>";
+    ul3+="<li>primavera</li>";
+    ul3+="verano";
+    ul3+="otoño"
+    ul3+="invierno"
+    ul3+="</ul>`"
+
+    console.log(ul3)
+    </script>
+</body>
+</html>

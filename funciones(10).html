@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones</title>
+</head>
+<body>
+    <h1>funciones</h1>
+    <script>
+
+        //una funcion es un bloque de codigo autocontenido que se puede definir
+        //  una vez y ejecutar en cualquier momento
+
+        //funcion declarada
+        function estoEsUnaFuncion() {
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+        }
+        //invocacion de funciones
+        // estoEsUnaFuncion();
+        // estoEsUnaFuncion();
+        // estoEsUnaFuncion();
+        // estoEsUnaFuncion();
+
+        //let valordefuncion= unaFuncionquedevuelvevalor();
+
+        function unaFuncionquedevuelvevalor(){
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+            return "la funcion ha retornado una cadena de texto"
+        }
+
+        //console.log(valordefuncion)
+
+        function saludar(nombre = "ricardo",edad = 6){
+            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+        }
+        saludar("Ricardo",16);
+        saludar();
+
+
+        //funciones declaradas VS funciones expresadas 
+
+        estoEsUnaFuncionDeclarada();
+
+        function estoEsUnaFuncionDeclarada(){
+            console.log("Esto es una funcion declarada");
+        }
+
+        estoEsUnaFuncionDeclarada();
+
+        //funcionExpresada();
+
+        const funcionExpresada = function(){
+            console.log("esto es una funcion expresada");
+        }
+
+        funcionExpresada();
+
+
+
+
+    </script>
+</body>
+</html>

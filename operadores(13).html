@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+     <h1> Tipos de Operadores</h1>
+
+     <script>
+
+         //operadores
+        //aritmeticos + - * / % ()
+
+
+        // let a = 5 + 5 - 10 * 2 
+        // let modulo = 7 % 2
+        // console.log(a);
+        // console.log(modulo);
+
+
+        /*relacionales >, <, > =, < =, ==, ===, !=, !==,  */
+
+        
+        // console.log(8 > 9);
+        // console.log(8 < 9);
+
+        // console.log(8 >=9);
+        // console.log(8 <=9);
+        // console.log(8 <=8);
+
+        /*= un igual es asignacion de variable
+        == dos ioguales es comparacion de valores  
+        === tres iguales es comparacion de tipo de dato y de valor
+        (la buena practica te dice que utilices los tres iguales )   */ 
+
+        // console.log(7 == 7);
+        // console.log("7" == 7);
+        // console.log(0 == false);
+
+
+        // //ahora con los tres iguales 
+        // console.log(7 === 7);
+        // console.log("7" === 7);
+        // console.log(0 === false);
+
+
+        //incremento decremento
+        //let i = 3 
+
+        //ejemplo de como influye el orden de el operador unario
+
+        // console.log(i++); // primero imprime valor actual sin incrementar, luego incrementa
+        // console.log(++i); //primero incrementa, luego imprime valor ya incrementado
+
+        //lo recomendado es utilizar los i++ o i--
+
+        //una forma
+        //i = i + 2;
+
+        // //tambien se puede representar como
+        // i+= 3
+
+
+        //existen casos especiales como 
+
+        //el operador unario  (aumentar o disminuir valor por valor) 
+        // i++;
+        // --i;
+        // i++;
+        // --i
+        // console.log(i);
+
+
+        /*operadores logicos 
+        ! - Not :Niega es decir lo verdadero lo vuelve falso y viceversa 
+        || - Or : cuando tenga mas de dos condicione con que una sea verdadera el Or sera verdadero
+        && - And : cuando tengo dos o mas condiciones todas tien que cumplirse es decir que sean verdaderas para que AND se valide
+        */
+
+        console.log(!true);
+        console.log(!false);
+
+        console.log((9 === 9)||("9" === 9));
+        console.log((9 === "9")||("9" === 9));
+
+        console.log((9 === 9)&&("9" === 9));
+        console.log((9 === 9)&&(9 === 9));
+
+
+
+
+
+
+     </script>
+</body>
+</html>

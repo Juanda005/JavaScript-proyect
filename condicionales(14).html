@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <h1>Condicionales</h1>
+    <script>
+        //una estructura de control es aquel mecanismo que permite controlar el flujo de tu porgramacion
+        //estructuras secuenciales: son las que van una detras de las otras 
+        //estrucuturas condicionales: que dependiendo de la evaluacion de una condicion hacemos ciertas acciones u otras 
+        //estrucutras loop´
+
+
+        //En lenguajes de programación, las estructuras de control permiten modificar el flujo de ejecución de las instrucciones de un programa. Con las estructuras de control se puede: De acuerdo con una condición, ejecutar un grupo u otro de sentencias
+
+        let edad = 17
+
+        if (edad > 17) {
+            console.log("eres mayor de edad");
+        } else {
+            console.log("eres menor de edad");
+        }
+
+        if (edad >= 18) {
+        console.log("eres mayor de edad");
+        } else {
+        console.log("eres menor de edad");
+        }
+
+
+
+        /*if - else if - else */
+
+
+       /* dejame dormir 0hrs - 5hrs
+        Buenos dias 6hrs - 11hrs
+        Buenas Tardes 12hrs - 18hrs
+        Buenas Noches 19hrs - 23hrs
+        */
+
+        let hora = 6
+        
+        if (hora >= 0 && hora <= 5) {
+            console.log("Dejame Dormir");
+        } else if (hora >= 6 && hora <= 11) {
+            console.log("Buenos Dias");
+        } else if (hora >= 12 && hora <= 18) {
+            console.log("Buenas Tardes");
+        } else {
+            console.log("Buenas Noches");
+        }
+        
+
+        if (hora < 6 ) {
+            console.log("Dejame Dormir");
+        } else if (hora > 5 && hora < 12) {
+            console.log("Buenos Dias");
+        } else if (hora > 11 && hora < 19) {
+            console.log("Buenas Tardes");
+        } else {
+            console.log("Buenas Noches");
+        }
+
+        /*Operador Ternario    sintaxis: (condicion) ? verdadero : falsa*/
+
+        console.log("operador ternario");
+
+        let eresMayor = (edad >= 18)
+        ? "eres mayor de edad" 
+        : "eres menor de edad";
+        console.log(eresMayor);
+
+        /*switch - case*/
+        //nos va a servir cuando nosotros tengamos una situacion en donde tengamos diferentes valores para una misma variable
+
+
+        let dia = 9;
+
+        switch (dia) {
+            case 0:
+            console.log("Domingo");
+            break;
+            case 1:
+            console.log("lunes");
+            break;
+            case 2:
+            console.log("Martes");
+            break;
+            case 3:
+            console.log("Miercoles");
+            break;
+            case 4:
+            console.log("Jueves");
+            break;
+            case 5:
+            console.log("Viernes");
+            break;
+            case 6:
+            console.log("Sabado");
+
+            default:
+                console.log("Este dia no existe");
+                break;
+        }
+
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>
